@@ -13,7 +13,37 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow */
             font-size: 25px;
             background-color: azure;
+            align-items: ;
+            flex-direction: row;
+            position: relative;
+            position: absolute;
+            grid-row: auto;
+            grid-auto-flow: calc(150px);
+            grid-template-columns: max-content;
+            grid-auto-flow: column;
+            background-position-x: right;
+        }  
+        button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /*display: inline-block;*/
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            align-self: auto;
+            flex-flow: row-reverse;
+
         }
+        button:hover {
+             background-color: #730073;
+        }
+
     </style>
 </head>
 <body>
@@ -21,10 +51,16 @@
         <ol style="list-style-type: upper-roman;">
             
             <li style="color: blue; font-weight: bold;"> Blueberry</li>
-            <button style="width: 150px;height: 50px;"> click me</button>
-            <li style="color: yellowgreen; font-weight: bold;">     Banana</li>
+            <button style="width: 150px;height: 50px;"> Blueberry</button>
+            <li style="color: yellowgreen; font-weight: bold;">Banana</li>
+            <button> Banana</button> <br>
+
             <li style="color: aquamarine; font-weight: bolder;">Grape</li>
+            <button> Grape</button><br>
+
             <li style="color: brown; font-weight: bold;">apple</li>
+            <button style="background-color: blue;"> Apple</button>
+
         </ol>
     </div>
 </body>
